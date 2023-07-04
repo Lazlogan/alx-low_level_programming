@@ -1,13 +1,20 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - Entry point
- * puts - prints out string value
- * Return: Always 0 (Success)
+ * main - Entry Block
+  *Description: prints _putchar followed by a new line
+ * Return: 0
  */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-return (0);
-}
+	char c[8] = "_putchar";
 
+	int i = 0;
+
+	while (i < 8)
+	{
+		_putchar(c[i]);
+		i++;
+	}
+	_putchar('\n');
+	return (0);
+}
